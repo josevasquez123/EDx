@@ -1,3 +1,11 @@
+h1{
+    text-align: center;
+}
+
+#header{
+    color:lightskyblue;
+}
+
 ul{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -8,3 +16,32 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+table{
+    margin-left: auto;
+    margin-right:auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+    padding: 2%;
+}
+th{
+    background-color: lightgray;
+}
+
+@media (min-width:700px){
+    h1, h3{
+        color: lightsalmon;
+    }
+}
+
+@media (max-width:699px){
+    h3{
+        color: lightgreen;
+    }
+}
+
+.comunic{
+    color: lightcoral;
+}

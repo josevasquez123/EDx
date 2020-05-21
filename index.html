@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto ECE</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <h1 style="color:lightgreen; text-align: center;">PROYECTO ECE</h1> 
+    <body style="margin-left: 5px;">
+        <h1 id="header">PROYECTO ECE</h1> 
         <p ALIGN="justify">Esta página presenta los avances del proyecto ECE que estoy elaborando en el ciclo. El proyecto se trata
             de un adaptador de un sensor de temperatura para enviar su valor mediante diferentes buses de comunicación
-            , SPI, I2C, UART y modbus, esto otorga flexibilidad al momento de escoger el dispositivo que recibirá el dato
+            <span class="comunic"> SPI, I2C, UART y MODBUS </span>, esto otorga flexibilidad al momento de escoger el dispositivo que recibirá el dato
             de la temperatura. Además, se puede configurar los parámetros de dichos potrocolos de comunicación mediante botones y 
             una pantalla gráfica que hace más amigable su manejo del adaptador.
         </p>
@@ -25,5 +26,32 @@
             las conexiones entre estos; además, con esto se puede tener una idea más concreta del producto final del proyecto. 
         </p>
         <img src="DIAG.png" width=50%>
+
+        <h3>CONFIGURACIÓN DE LOS BUSES</h3>
+            <p>La configuración de los buses es por parte del usuario, él tiene
+            toda la libertad de configurar la mayoria de los parametros 
+            de los buses. A continuación, se mostrará una tabla donde resume
+            todo lo explicado anteriormente para mayor entendimiento. 
+            </p>
+        <table style="text-align: center;">
+            <th>Buses de Comunicación</th>
+            <th>Parámetros de Configuración</th>
+        <tr>
+            <td>UART</td>
+            <td>bits de paridad, # de bits, velocidad de baudios</td>
+        </tr>
+        <tr>
+            <td>SPI</td>
+            <td>bits de paridad, # de bits, velocidad de baudios</td>
+        </tr>
+        <tr>
+            <td>I2C</td>
+            <td>dirección, frecuencia del SCK, registro destino</td>
+        </tr>
+        <tr>
+            <td>MODBUS</td>
+            <td>bits de paridad, # de bits, velocidad de baudios</td>
+        </tr>
+        </table>
     </body>
 </html>
